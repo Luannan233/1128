@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,14 +12,21 @@
 </style>
 
 <body>
+    <div style="width: 200px;height: 100px;margin: auto;text-align: center;">
+        <h2 style="color: red;font-size: 50px;">生活顺利</h2>
+        <button id="a" onclick="playAudio()" style="transition: all 2s;transform: scale(2);">点我</button>
+
+    </div>
     <audio id="myAudio" src="./mp3/太聪明.mp3"></audio>
 </body>
 
 <script>
-function playAudio() {
-    var audio = document.getElementById("myAudio");
-    audio.play();
-}
-playAudio()
+    function playAudio() {
+        let audio = document.getElementById("myAudio");
+        let a = document.getElementById('a')
+        a.style.display = 'none'
+        audio.play();
+    }
 </script>
+
 </html>
